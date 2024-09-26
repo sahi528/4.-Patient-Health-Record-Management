@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Records Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient's Health Records</h1>
+        <form id="loginForm">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" id="loginButton">Login</button>
+        </form>
+        <div id="searchContainer" style="display: none;">
+            <label for="searchInput">Search by ID or Name:</label>
+            <input type="text" id="searchInput" name="searchInput" placeholder="Enter ID or Name">
+            <button type="button" id="searchButton">Search</button>
+        </div>
+        <div id="recordsContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
